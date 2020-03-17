@@ -39,7 +39,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/main_recycler_last_arrival"
-                android:textSize="20dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
                 android:paddingTop="4dp"
                 android:paddingBottom="16dp" />
 
