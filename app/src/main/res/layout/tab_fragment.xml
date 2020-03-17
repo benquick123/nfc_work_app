@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/main_view_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_recycler_title_entry"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/main_recycler_total_text"
+                android:layout_width="128dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:paddingTop="16dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="128dp"
+                android:layout_height="84dp"
+                android:id="@+id/main_recycler_total_hours"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/colorPrimary"
+                android:paddingBottom="4dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_recycler_last_arrival"
+                android:textSize="20dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="404, but not really:"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_recycler_error_message"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="ERROR MESSAGE"
+                android:paddingBottom="16dp"
+                android:paddingHorizontal="4dp"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_recycler_refresh_button"
+                android:text="@string/retry"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="4dp"
+                android:background="@color/lightDelimiterColor" />
+
+            <ProgressBar
+                android:id="@+id/main_view_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:layout_gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

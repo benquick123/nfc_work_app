@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nfc_scan_constraint_layout"
+    tools:context=".NFCScan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/nfc_scan_status_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp"
+            android:textSize="32dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/nfc_scan_status_text"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:paddingTop="16dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:id="@+id/nfc_scan_date_text" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="72dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/nfc_scan_time_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/nfc_scan_plus_hours" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retry"
+            android:id="@+id/nfc_scan_refresh_button"
+            android:textColor="@android:color/background_dark"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_today_black_24dp"
+            android:padding="16dp"
+            android:layout_marginTop="48dp"
+            android:id="@+id/nfc_scan_calendar_button"
+            android:contentDescription="@string/open_calendar"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nfc_scan_progress_bar"
+        android:paddingVertical="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

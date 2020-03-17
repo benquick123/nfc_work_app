@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_recycler_title_entry"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:paddingTop="16dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/total_this_month"/>
+
+    <TextView
+        android:layout_width="128dp"
+        android:layout_height="84dp"
+        android:id="@+id/main_recycler_total_hours"
+        android:text="HH:MM"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+
+        android:textColor="@color/colorPrimary"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_recycler_last_arrival"
+        android:text="Last arrival: HH:MM:SS"
+        android:paddingTop="4dp"
+        android:paddingBottom="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="4dp"
+        android:background="@color/lightDelimiterColor" />
+
+
+</LinearLayout>

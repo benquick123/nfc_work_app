@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NFC Work</string>
+    <string name="arrive">Arrival</string>
+    <string name="leave">Departure</string>
+    <string name="retry">Try again</string>
+    <string name="open_calendar">Open calendar.</string>
+    <string name="total_this_month">Total this month</string>
+    <string name="checkout">Checked-out</string>
+    <string name="na">NA</string>
+    <string name="total_in">In</string>
+    <string name="total_until">Total until</string>
+    <string name="last_arrival">Last arrival:</string>
+
+</resources>

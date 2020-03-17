@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_recycler_normal_entry"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_recycler_date"
+            android:text="Day, Date"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_recycler_arrival_timestamp"
+            android:text="HH:mm"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_recycler_departure_timestamp"
+            android:text="HH:mm"
+            android:textColor="@color/colorSecondary"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/main_recycler_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="4dp"
+            android:text="HH:MM:SS"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/normal_entry_delimiter"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="4dp"
+        android:background="@color/darkDelimiterColor"/>
+
+</LinearLayout>
