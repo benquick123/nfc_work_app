@@ -100,7 +100,6 @@ public class TabFragment extends Fragment {
         totalText = rootView.findViewById(R.id.main_recycler_total_text);
 
         recyclerView = rootView.findViewById(R.id.main_recycler_view);
-        recyclerView.setLayoutManager(new ResponsiveLinearLayoutManager(getActivity(), recyclerView, totalText, totalHoursText, lastArrivalText, currentMonthNumber.equals(monthNumber)));
 
         swipeRefreshLayout = rootView.findViewById(R.id.main_view_swipe_refresh);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -117,6 +116,8 @@ public class TabFragment extends Fragment {
     public void sendRequest() {
         mDataset = new ArrayList<>();
         final MainActivity activity = (MainActivity)mContext;
+
+        recyclerView.setLayoutManager(new ResponsiveLinearLayoutManager(getActivity(), recyclerView, totalText, totalHoursText, lastArrivalText, currentMonthNumber.equals(monthNumber)));
 
         String JSON_URL = "http://sailsation.eu/nfc_work/manage_hours";
         final String params = "user_id=" + userId + "&month=" + monthNumber + "&year=" + yearNumber;
